@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace XelaTech
 {
-    internal class Tecnico
+    public class Tecnico
     {
     }
 }

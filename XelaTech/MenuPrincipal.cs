@@ -21,5 +21,17 @@ namespace XelaTech
         {
 
         }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnGesCliente_Click(object sender, EventArgs e)
+        {
+            Clientes clientes = new Clientes();
+            clientes.Show();
+            this.Hide();
+        }
     }
 }

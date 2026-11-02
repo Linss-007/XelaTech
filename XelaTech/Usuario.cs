@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace XelaTech
 {
-    internal class Usuario : MenuPrincipal
+    public class Usuario
     {
 		private string codigo;
 		private string nombreCompleto;
