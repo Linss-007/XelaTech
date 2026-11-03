@@ -37,9 +37,30 @@ namespace XelaTech
 
         private void btnActuCliente_Click(object sender, EventArgs e)
         {
-            ActualizarCliente actualizar = new ActualizarCliente();
-            actualizar.Show();
-            this.Hide();
+            if (Datos.clientes.Count > 0)
+            {
+                ActualizarCliente actualizar = new ActualizarCliente();
+                actualizar.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("No existen clientes guardados", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnConsCliente_Click(object sender, EventArgs e)
+        {
+            if (Datos.clientes.Count > 0)
+            {
+                ConsultarCliente consultar = new ConsultarCliente();
+                consultar.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("No existen clientes guardados", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

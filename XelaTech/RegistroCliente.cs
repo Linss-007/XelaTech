@@ -62,7 +62,6 @@ namespace XelaTech
             else if(cbxTipoCliente.SelectedIndex < 0 || cbxTipoCliente.SelectedIndex > 4)
             {
                 MessageBox.Show("El tipo debe ser uno de los disponibles", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                cbxTipoCliente.ResetText();
             }
             else if(Datos.clientes.Count > 0)
             {
@@ -92,10 +91,15 @@ namespace XelaTech
             {
                 cliente.RegistrarCliente(cliente);
                 MessageBox.Show("El cliente se ha registrado", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                MessageBox.Show(Convert.ToString(cbxTipoCliente.SelectedIndex));
             }
         }
 
-        
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            txbCodCliente.Clear();
+            txbCorreoCliente.Clear();
+            txbNomCliente.Clear();
+            txbTelCliente.Clear();
+        }
     }
 }

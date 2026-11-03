@@ -41,6 +41,7 @@
             this.cbxTipoCliente = new System.Windows.Forms.ComboBox();
             this.btnVolverCliente = new System.Windows.Forms.Button();
             this.btnRegCliente = new System.Windows.Forms.Button();
+            this.btnLimpiar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtTituloRegCliente
@@ -162,7 +163,7 @@
             this.btnVolverCliente.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnVolverCliente.Font = new System.Drawing.Font("Roboto Bk", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVolverCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.btnVolverCliente.Location = new System.Drawing.Point(92, 365);
+            this.btnVolverCliente.Location = new System.Drawing.Point(33, 365);
             this.btnVolverCliente.Name = "btnVolverCliente";
             this.btnVolverCliente.Size = new System.Drawing.Size(127, 34);
             this.btnVolverCliente.TabIndex = 11;
@@ -176,7 +177,7 @@
             this.btnRegCliente.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnRegCliente.Font = new System.Drawing.Font("Roboto Bk", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.btnRegCliente.Location = new System.Drawing.Point(273, 365);
+            this.btnRegCliente.Location = new System.Drawing.Point(359, 365);
             this.btnRegCliente.Name = "btnRegCliente";
             this.btnRegCliente.Size = new System.Drawing.Size(127, 34);
             this.btnRegCliente.TabIndex = 12;
@@ -184,12 +185,27 @@
             this.btnRegCliente.UseVisualStyleBackColor = false;
             this.btnRegCliente.Click += new System.EventHandler(this.btnRegCliente_Click);
             // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnLimpiar.Font = new System.Drawing.Font("Roboto Bk", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpiar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnLimpiar.Location = new System.Drawing.Point(198, 365);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(127, 34);
+            this.btnLimpiar.TabIndex = 13;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = false;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            // 
             // RegistroCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(513, 450);
+            this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnRegCliente);
             this.Controls.Add(this.btnVolverCliente);
             this.Controls.Add(this.cbxTipoCliente);
@@ -226,5 +242,6 @@
         private System.Windows.Forms.ComboBox cbxTipoCliente;
         private System.Windows.Forms.Button btnVolverCliente;
         private System.Windows.Forms.Button btnRegCliente;
+        private System.Windows.Forms.Button btnLimpiar;
     }
 }
