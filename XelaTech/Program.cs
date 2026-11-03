@@ -16,7 +16,9 @@ namespace XelaTech
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MenuPrincipal());
+            MenuPrincipal menu = new MenuPrincipal();
+            menu.Show();
+            Application.Run();
         }
     }
 }

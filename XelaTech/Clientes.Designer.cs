@@ -39,7 +39,7 @@
             // 
             this.txtClientesTit.AutoSize = true;
             this.txtClientesTit.Font = new System.Drawing.Font("LEMON MILK Bold", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtClientesTit.ForeColor = System.Drawing.Color.Yellow;
+            this.txtClientesTit.ForeColor = System.Drawing.Color.Navy;
             this.txtClientesTit.Location = new System.Drawing.Point(80, 9);
             this.txtClientesTit.Name = "txtClientesTit";
             this.txtClientesTit.Size = new System.Drawing.Size(228, 57);
@@ -48,9 +48,9 @@
             // 
             // btnRegisCliente
             // 
-            this.btnRegisCliente.BackColor = System.Drawing.Color.SkyBlue;
+            this.btnRegisCliente.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnRegisCliente.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnRegisCliente.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegisCliente.Font = new System.Drawing.Font("Roboto Bk", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegisCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.btnRegisCliente.Location = new System.Drawing.Point(99, 69);
             this.btnRegisCliente.Name = "btnRegisCliente";
@@ -62,9 +62,9 @@
             // 
             // btnConsCliente
             // 
-            this.btnConsCliente.BackColor = System.Drawing.Color.SkyBlue;
+            this.btnConsCliente.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnConsCliente.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnConsCliente.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConsCliente.Font = new System.Drawing.Font("Roboto Bk", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConsCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.btnConsCliente.Location = new System.Drawing.Point(99, 211);
             this.btnConsCliente.Name = "btnConsCliente";
@@ -75,9 +75,9 @@
             // 
             // btnActuCliente
             // 
-            this.btnActuCliente.BackColor = System.Drawing.Color.SkyBlue;
+            this.btnActuCliente.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnActuCliente.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnActuCliente.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnActuCliente.Font = new System.Drawing.Font("Roboto Bk", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnActuCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.btnActuCliente.Location = new System.Drawing.Point(99, 136);
             this.btnActuCliente.Name = "btnActuCliente";
@@ -85,12 +85,13 @@
             this.btnActuCliente.TabIndex = 3;
             this.btnActuCliente.Text = "Actualizar Cliente";
             this.btnActuCliente.UseVisualStyleBackColor = false;
+            this.btnActuCliente.Click += new System.EventHandler(this.btnActuCliente_Click);
             // 
             // btnSalirCliente
             // 
-            this.btnSalirCliente.BackColor = System.Drawing.Color.SkyBlue;
+            this.btnSalirCliente.BackColor = System.Drawing.Color.RoyalBlue;
             this.btnSalirCliente.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnSalirCliente.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalirCliente.Font = new System.Drawing.Font("Roboto Bk", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalirCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.btnSalirCliente.Location = new System.Drawing.Point(99, 367);
             this.btnSalirCliente.Name = "btnSalirCliente";
@@ -104,7 +105,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.RoyalBlue;
+            this.BackColor = System.Drawing.SystemColors.Highlight;
             this.ClientSize = new System.Drawing.Size(392, 450);
             this.Controls.Add(this.btnSalirCliente);
             this.Controls.Add(this.btnActuCliente);

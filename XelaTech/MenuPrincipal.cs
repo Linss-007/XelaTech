@@ -17,11 +17,6 @@ namespace XelaTech
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnSalir_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -31,7 +26,7 @@ namespace XelaTech
         {
             Clientes clientes = new Clientes();
             clientes.Show();
-            this.Hide();
+            this.Close();
         }
     }
 }

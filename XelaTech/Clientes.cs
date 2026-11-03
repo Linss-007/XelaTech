@@ -30,6 +30,13 @@ namespace XelaTech
 
         private void btnRegisCliente_Click(object sender, EventArgs e)
         {
+            RegistroCliente registro = new RegistroCliente();
+            registro.Show();
+            this.Hide();
+        }
+
+        private void btnActuCliente_Click(object sender, EventArgs e)
+        {
 
         }
     }

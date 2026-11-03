@@ -173,7 +173,6 @@
             this.Controls.Add(this.MenuTitulo);
             this.Name = "MenuPrincipal";
             this.Text = "Menu";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
