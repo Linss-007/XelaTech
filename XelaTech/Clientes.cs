@@ -37,7 +37,9 @@ namespace XelaTech
 
         private void btnActuCliente_Click(object sender, EventArgs e)
         {
-
+            ActualizarCliente actualizar = new ActualizarCliente();
+            actualizar.Show();
+            this.Hide();
         }
     }
 }

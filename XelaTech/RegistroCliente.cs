@@ -85,13 +85,13 @@ namespace XelaTech
                 else
                 {
                     cliente.RegistrarCliente(cliente);
-                    MessageBox.Show("El cliente se ha registrado", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    MessageBox.Show("El cliente se ha registrado", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
             else
             {
                 cliente.RegistrarCliente(cliente);
-                MessageBox.Show("El cliente se ha registrado", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("El cliente se ha registrado", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 MessageBox.Show(Convert.ToString(cbxTipoCliente.SelectedIndex));
             }
         }

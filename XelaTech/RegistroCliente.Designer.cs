@@ -56,6 +56,7 @@
             // 
             // txbCodCliente
             // 
+            this.txbCodCliente.BackColor = System.Drawing.Color.PowderBlue;
             this.txbCodCliente.Location = new System.Drawing.Point(172, 97);
             this.txbCodCliente.Name = "txbCodCliente";
             this.txbCodCliente.Size = new System.Drawing.Size(203, 20);
@@ -63,6 +64,7 @@
             // 
             // txbNomCliente
             // 
+            this.txbNomCliente.BackColor = System.Drawing.Color.PowderBlue;
             this.txbNomCliente.Location = new System.Drawing.Point(172, 147);
             this.txbNomCliente.Name = "txbNomCliente";
             this.txbNomCliente.Size = new System.Drawing.Size(203, 20);
@@ -70,6 +72,7 @@
             // 
             // txbCorreoCliente
             // 
+            this.txbCorreoCliente.BackColor = System.Drawing.Color.PowderBlue;
             this.txbCorreoCliente.Location = new System.Drawing.Point(172, 196);
             this.txbCorreoCliente.Name = "txbCorreoCliente";
             this.txbCorreoCliente.Size = new System.Drawing.Size(203, 20);
@@ -121,6 +124,7 @@
             // 
             // txbTelCliente
             // 
+            this.txbTelCliente.BackColor = System.Drawing.Color.PowderBlue;
             this.txbTelCliente.Location = new System.Drawing.Point(172, 244);
             this.txbTelCliente.Name = "txbTelCliente";
             this.txbTelCliente.Size = new System.Drawing.Size(203, 20);
@@ -139,6 +143,7 @@
             // 
             // cbxTipoCliente
             // 
+            this.cbxTipoCliente.BackColor = System.Drawing.Color.PowderBlue;
             this.cbxTipoCliente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxTipoCliente.FormattingEnabled = true;
             this.cbxTipoCliente.Items.AddRange(new object[] {
@@ -183,7 +188,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Highlight;
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(513, 450);
             this.Controls.Add(this.btnRegCliente);
             this.Controls.Add(this.btnVolverCliente);
