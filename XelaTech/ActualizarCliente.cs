@@ -89,6 +89,17 @@ namespace XelaTech
                 {
                     Datos.clientes[posCodigo] = cliente;
                     MessageBox.Show("El cliente se ha actualizado","Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    codigoBuscar = null;
+                    posCodigo = -1;
+                    codigoEncontrado = false;
+                    txbBuscarCliente.Clear();
+                    txbCorreoCliente.Clear();
+                    txbNomCliente.Clear();
+                    txbTelCliente.Clear();
+                    txbNomCliente.Visible = false;
+                    txbCorreoCliente.Visible = false;
+                    txbTelCliente.Visible = false;
+                    cbxTipoCliente.Visible = false;
                 }
             }
             else
