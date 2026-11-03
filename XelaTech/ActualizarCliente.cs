@@ -51,6 +51,7 @@ namespace XelaTech
                 txbNomCliente.Visible = true;
                 txbCorreoCliente.Visible = true;
                 txbTelCliente.Visible = true;
+                cbxTipoCliente.Visible = true;
             }
             else
             {
