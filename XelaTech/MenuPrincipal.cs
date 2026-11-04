@@ -56,5 +56,40 @@ namespace XelaTech
             repuestos.Show();
             this.Close();
         }
+
+        private void btnGesColas_Click(object sender, EventArgs e)
+        {
+            Colas colas = new Colas();
+            colas.Show();
+            this.Close();
+        }
+
+        private void btnOrdenamientos_Click(object sender, EventArgs e)
+        {
+            Ordenamientos ordenamientos = new Ordenamientos();
+            ordenamientos.Show();
+            this.Close();
+        }
+
+        private void btnBusquedas_Click(object sender, EventArgs e)
+        {
+            Busquedas busquedas = new Busquedas();
+            busquedas.Show();
+            this.Close();
+        }
+
+        private void btnReportes_Click(object sender, EventArgs e)
+        {
+            Reportes reportes = new Reportes();
+            reportes.Show();
+            this.Close();
+        }
+
+        private void btnGenerarDatos_Click(object sender, EventArgs e)
+        {
+            DatosPrueba datosPrueba = new DatosPrueba();
+            datosPrueba.Show();
+            this.Close();
+        }
     }
 }

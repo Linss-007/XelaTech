@@ -182,6 +182,37 @@
     <Compile Include="Equipo.cs" />
     <Compile Include="Repuesto.cs" />
     <Compile Include="Solicitud.cs" />
+    <Compile Include="Algoritmos.cs" />
+    <Compile Include="Colas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Colas.Designer.cs">
+      <DependentUpon>Colas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ordenamientos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ordenamientos.Designer.cs">
+      <DependentUpon>Ordenamientos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Busquedas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busquedas.Designer.cs">
+      <DependentUpon>Busquedas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes.Designer.cs">
+      <DependentUpon>Reportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatosPrueba.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatosPrueba.Designer.cs">
+      <DependentUpon>DatosPrueba.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="ActualizarCliente.resx">
       <DependentUpon>ActualizarCliente.cs</DependentUpon>
     </EmbeddedResource>
@@ -253,6 +284,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ConsultarSolicitud.resx">
       <DependentUpon>ConsultarSolicitud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Colas.resx">
+      <DependentUpon>Colas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ordenamientos.resx">
+      <DependentUpon>Ordenamientos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busquedas.resx">
+      <DependentUpon>Busquedas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes.resx">
+      <DependentUpon>Reportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatosPrueba.resx">
+      <DependentUpon>DatosPrueba.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -45,15 +45,11 @@ namespace XelaTech
             get { return cantTrabajosFin; }
             set { cantTrabajosFin = value; }
         }
-
-        // Arreglo de 5 posiciones: posicion 0 = nota 1 ... posicion 4 = nota 5 (veces recibida)
         private int[] calificaciones = new int[5];
         public int[] Calificaciones
         {
             get { return calificaciones; }
         }
-
-        // Promedio ponderado; si aun no tiene calificaciones es 0 para evitar dividir entre cero
         public double CalifPromedio
         {
             get
@@ -72,8 +68,6 @@ namespace XelaTech
                 return (double)suma / total;
             }
         }
-
-        // Fila que ocupa el tecnico en la matriz de carga semanal
         private int filaMatriz = -1;
         public int FilaMatriz
         {
@@ -91,8 +85,6 @@ namespace XelaTech
             tecnico.FilaMatriz = Datos.tecnicos.Count;
             Datos.tecnicos.Add(tecnico);
         }
-
-        // Cada especialidad atiende ciertos tipos de equipo
         public bool AtiendeTipo(tipoEquipo tipo)
         {
             switch (tipo)
@@ -108,8 +100,6 @@ namespace XelaTech
                     return false;
             }
         }
-
-        // Devuelve null si puede recibir el trabajo; si no, el motivo del rechazo
         public string MotivoRechazo(tipoEquipo tipo)
         {
             if (Estado == estadoTecnico.FueraDeServicio)
@@ -174,8 +164,6 @@ namespace XelaTech
                 Estado = estadoTecnico.Disponible;
             }
         }
-
-        // Devuelve null si se actualizó; si no, el motivo
         public string ActualizarInfo(string nombreIng, especialidad especialidadIng, bool ausente)
         {
             if (nombreIng == null || nombreIng == "")

@@ -43,8 +43,6 @@ namespace XelaTech
             }
             return true;
         }
-
-        // Muestra el error o el mensaje de exito y refresca la informacion
         private void Resultado(string error, string exito)
         {
             if (error != null)

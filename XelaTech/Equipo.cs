@@ -136,15 +136,11 @@ namespace XelaTech
                 }
             }
         }
-
-        // Historial de solicitudes del equipo
         private List<Solicitud> historial = new List<Solicitud>();
         public List<Solicitud> Historial
         {
             get { return historial; }
         }
-
-        // Costo de revision segun el tipo de equipo
         public double CostoRevision
         {
             get
@@ -158,8 +154,6 @@ namespace XelaTech
                 }
             }
         }
-
-        // Horas estimadas de reparacion segun el tipo de equipo
         public double HorasEstimadas
         {
             get
@@ -182,8 +176,6 @@ namespace XelaTech
         {
             Datos.equipos.Add(equipo);
         }
-
-        // Devuelve null si se actualizó; si no, el motivo
         public string ActualizarInfo(string marcaIng, string modeloIng, estadoFisico estadoIng, string accesoriosIng)
         {
             if (marcaIng == null || marcaIng == "")
@@ -200,8 +192,6 @@ namespace XelaTech
             Accesorios = accesoriosIng;
             return null;
         }
-
-        // Ficha del equipo con su costo de revision, horas estimadas e historial de solicitudes
         public string Ficha()
         {
             StringBuilder ficha = new StringBuilder();

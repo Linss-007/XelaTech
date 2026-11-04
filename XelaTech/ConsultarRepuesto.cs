@@ -32,8 +32,6 @@ namespace XelaTech
                 Estado = r.EstadoStock
             }).ToList();
         }
-
-        // Rojo: agotado. Naranja: existencia en el minimo
         private void dgvRepuestosGuardados_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
             if (e.RowIndex < 0 || e.RowIndex >= Datos.repuestos.Count)

@@ -169,8 +169,6 @@ namespace XelaTech
         {
             Datos.repuestos.Add(repuesto);
         }
-
-        // Descuenta existencia. Devuelve null si se pudo; si no, el motivo
         public string Consumir(int cantidad)
         {
             if (cantidad <= 0)
@@ -185,8 +183,6 @@ namespace XelaTech
             cantUtilizada += cantidad;
             return null;
         }
-
-        // Devuelve la existencia (por ejemplo al cancelar una solicitud)
         public void Devolver(int cantidad)
         {
             if (cantidad <= 0)
@@ -200,8 +196,6 @@ namespace XelaTech
                 cantUtilizada = 0;
             }
         }
-
-        // Repone existencia. Devuelve null si se pudo; si no, el motivo
         public string Reponer(int cantidad)
         {
             if (cantidad <= 0)
@@ -211,8 +205,6 @@ namespace XelaTech
             existencia += cantidad;
             return null;
         }
-
-        // Devuelve null si se actualizó; si no, el motivo
         public string ActualizarInfo(string nombreIng, categoria categoriaIng, int existenciaMinIng, double costoIng, double precioIng)
         {
             if (nombreIng == null || nombreIng == "")

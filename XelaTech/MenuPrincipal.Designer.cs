@@ -135,6 +135,7 @@
             this.btnGesColas.TabIndex = 6;
             this.btnGesColas.Text = "Gestión de Colas";
             this.btnGesColas.UseVisualStyleBackColor = false;
+            this.btnGesColas.Click += new System.EventHandler(this.btnGesColas_Click);
             // 
             // btnOrdenamientos
             // 
@@ -148,6 +149,7 @@
             this.btnOrdenamientos.TabIndex = 7;
             this.btnOrdenamientos.Text = "Ordenamientos";
             this.btnOrdenamientos.UseVisualStyleBackColor = false;
+            this.btnOrdenamientos.Click += new System.EventHandler(this.btnOrdenamientos_Click);
             // 
             // btnBusquedas
             // 
@@ -161,6 +163,7 @@
             this.btnBusquedas.TabIndex = 8;
             this.btnBusquedas.Text = "Busquedas";
             this.btnBusquedas.UseVisualStyleBackColor = false;
+            this.btnBusquedas.Click += new System.EventHandler(this.btnBusquedas_Click);
             // 
             // btnReportes
             // 
@@ -174,6 +177,7 @@
             this.btnReportes.TabIndex = 9;
             this.btnReportes.Text = "Reportes";
             this.btnReportes.UseVisualStyleBackColor = false;
+            this.btnReportes.Click += new System.EventHandler(this.btnReportes_Click);
             // 
             // btnGenerarDatos
             // 
@@ -187,6 +191,7 @@
             this.btnGenerarDatos.TabIndex = 10;
             this.btnGenerarDatos.Text = "Generar Datos";
             this.btnGenerarDatos.UseVisualStyleBackColor = false;
+            this.btnGenerarDatos.Click += new System.EventHandler(this.btnGenerarDatos_Click);
             // 
             // btnSalir
             // 

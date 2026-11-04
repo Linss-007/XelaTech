@@ -7,7 +7,6 @@ using System.Windows.Forms;
 
 namespace XelaTech
 {
-    // Un registro del historial de estados (se guarda en una pila dentro de cada solicitud)
     public class CambioEstado
     {
         public CambioEstado(bool tieneAnterior, estadoSolicitud anteriorIng, estadoSolicitud nuevoIng, string notaIng)
@@ -31,8 +30,6 @@ namespace XelaTech
             return Textos.Fecha(Fecha) + " | " + origen + " -> " + Textos.De(Nuevo) + " | " + Nota;
         }
     }
-
-    // Repuesto usado en una solicitud, con el precio de venta vigente al usarlo
     public class RepuestoUsado
     {
         public RepuestoUsado(Repuesto repuestoIng, int cantidadIng)
@@ -51,7 +48,6 @@ namespace XelaTech
             get { return Cantidad * PrecioUnitario; }
         }
     }
-
     public class Solicitud
     {
         public const double TarifaHora = 50.0;
@@ -170,8 +166,6 @@ namespace XelaTech
         {
             get { return diagnostico; }
         }
-
-        // Acciones realizadas durante el diagnostico (una por linea)
         private List<string> acciones = new List<string>();
         public List<string> Acciones
         {
@@ -219,11 +213,7 @@ namespace XelaTech
         {
             get { return calificacion; }
         }
-
-        // Dia de atencion en la matriz de carga (0 = lunes ... 5 = sabado)
         private int diaAtencion = -1;
-
-        // Pila de cambios: el primer elemento es siempre la ultima accion realizada
         private Stack<CambioEstado> historial = new Stack<CambioEstado>();
         public Stack<CambioEstado> Historial
         {
@@ -244,8 +234,6 @@ namespace XelaTech
         {
             get { return prioridad != prioridad.Normal; }
         }
-
-        // Una solicitud sin tecnico sigue en la cola de espera
         public string EstadoTexto
         {
             get
@@ -266,8 +254,6 @@ namespace XelaTech
             }
             return (int)fecha.DayOfWeek - 1;
         }
-
-        // Crea la solicitud y la añade a la cola segun su prioridad
         public void RegistrarSolicitud(Solicitud solicitud)
         {
             Datos.solicitudes.Add(solicitud);
@@ -282,8 +268,6 @@ namespace XelaTech
                 Datos.colaNormal.Enqueue(solicitud);
             }
         }
-
-        // Una solicitud entregada o cancelada no admite cambios
         private string ValidarModificable()
         {
             if (estado == estadoSolicitud.Finalizada)
@@ -310,8 +294,6 @@ namespace XelaTech
             }
             return null;
         }
-
-        // Tabla de transiciones permitidas entre estados
         private static bool TransicionPermitida(estadoSolicitud de, estadoSolicitud a)
         {
             if (de == estadoSolicitud.Asignada)
@@ -344,8 +326,6 @@ namespace XelaTech
             estado = nuevo;
             return null;
         }
-
-        // Todos los metodos siguientes devuelven null si se pudo; si no, el motivo del error
         public string AsignarTecnico(Tecnico tecnicoIng)
         {
             string error = ValidarModificable();
@@ -455,8 +435,6 @@ namespace XelaTech
             calificacion = calificacionIng;
             return tecnico.LiberarTrabajo(true, calificacionIng);
         }
-
-        // Cancela, devuelve los repuestos al inventario y libera al tecnico
         public string Cancelar(out int devueltos)
         {
             devueltos = 0;
@@ -485,8 +463,6 @@ namespace XelaTech
             }
             return null;
         }
-
-        // Revierte el ultimo cambio (pila). Solo se puede deshacer de En Proceso a Asignada
         public string DeshacerUltimoCambio(out string mensaje)
         {
             mensaje = "";
@@ -526,8 +502,6 @@ namespace XelaTech
             }
             return null;
         }
-
-        // Resumen corto para mostrar en pantalla
         public string Resumen()
         {
             StringBuilder texto = new StringBuilder();
@@ -542,8 +516,6 @@ namespace XelaTech
             texto.AppendLine("Diagnóstico: " + (diagnostico == "" ? "(pendiente)" : diagnostico.Replace("\r\n", " / ").Replace("\n", " / ")));
             return texto.ToString();
         }
-
-        // Ficha completa con el historial de estados
         public string Ficha()
         {
             StringBuilder texto = new StringBuilder();
