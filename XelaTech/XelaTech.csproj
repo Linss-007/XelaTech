@@ -83,6 +83,105 @@
     </Compile>
     <Compile Include="Tecnico.cs" />
     <Compile Include="Usuario.cs" />
+    <Compile Include="Tecnicos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tecnicos.Designer.cs">
+      <DependentUpon>Tecnicos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Equipos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Equipos.Designer.cs">
+      <DependentUpon>Equipos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Repuestos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Repuestos.Designer.cs">
+      <DependentUpon>Repuestos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Solicitudes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Solicitudes.Designer.cs">
+      <DependentUpon>Solicitudes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroTecnico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroTecnico.Designer.cs">
+      <DependentUpon>RegistroTecnico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActualizarTecnico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActualizarTecnico.Designer.cs">
+      <DependentUpon>ActualizarTecnico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarTecnico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarTecnico.Designer.cs">
+      <DependentUpon>ConsultarTecnico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroEquipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroEquipo.Designer.cs">
+      <DependentUpon>RegistroEquipo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActualizarEquipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActualizarEquipo.Designer.cs">
+      <DependentUpon>ActualizarEquipo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarEquipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarEquipo.Designer.cs">
+      <DependentUpon>ConsultarEquipo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroRepuesto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroRepuesto.Designer.cs">
+      <DependentUpon>RegistroRepuesto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActualizarRepuesto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActualizarRepuesto.Designer.cs">
+      <DependentUpon>ActualizarRepuesto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarRepuesto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarRepuesto.Designer.cs">
+      <DependentUpon>ConsultarRepuesto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroSolicitud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroSolicitud.Designer.cs">
+      <DependentUpon>RegistroSolicitud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActualizarSolicitud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActualizarSolicitud.Designer.cs">
+      <DependentUpon>ActualizarSolicitud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarSolicitud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarSolicitud.Designer.cs">
+      <DependentUpon>ConsultarSolicitud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Equipo.cs" />
+    <Compile Include="Repuesto.cs" />
+    <Compile Include="Solicitud.cs" />
     <EmbeddedResource Include="ActualizarCliente.resx">
       <DependentUpon>ActualizarCliente.cs</DependentUpon>
     </EmbeddedResource>
@@ -106,6 +205,54 @@
     </Compile>
     <EmbeddedResource Include="RegistroCliente.resx">
       <DependentUpon>RegistroCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tecnicos.resx">
+      <DependentUpon>Tecnicos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Equipos.resx">
+      <DependentUpon>Equipos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repuestos.resx">
+      <DependentUpon>Repuestos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Solicitudes.resx">
+      <DependentUpon>Solicitudes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistroTecnico.resx">
+      <DependentUpon>RegistroTecnico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActualizarTecnico.resx">
+      <DependentUpon>ActualizarTecnico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarTecnico.resx">
+      <DependentUpon>ConsultarTecnico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistroEquipo.resx">
+      <DependentUpon>RegistroEquipo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActualizarEquipo.resx">
+      <DependentUpon>ActualizarEquipo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarEquipo.resx">
+      <DependentUpon>ConsultarEquipo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistroRepuesto.resx">
+      <DependentUpon>RegistroRepuesto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActualizarRepuesto.resx">
+      <DependentUpon>ActualizarRepuesto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarRepuesto.resx">
+      <DependentUpon>ConsultarRepuesto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistroSolicitud.resx">
+      <DependentUpon>RegistroSolicitud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActualizarSolicitud.resx">
+      <DependentUpon>ActualizarSolicitud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarSolicitud.resx">
+      <DependentUpon>ConsultarSolicitud.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

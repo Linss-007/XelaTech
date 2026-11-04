@@ -28,5 +28,33 @@ namespace XelaTech
             clientes.Show();
             this.Close();
         }
+
+        private void btnGesTecnico_Click(object sender, EventArgs e)
+        {
+            Tecnicos tecnicos = new Tecnicos();
+            tecnicos.Show();
+            this.Close();
+        }
+
+        private void btnGesEquipo_Click(object sender, EventArgs e)
+        {
+            Equipos equipos = new Equipos();
+            equipos.Show();
+            this.Close();
+        }
+
+        private void btnGesSolis_Click(object sender, EventArgs e)
+        {
+            Solicitudes solicitudes = new Solicitudes();
+            solicitudes.Show();
+            this.Close();
+        }
+
+        private void btnGesRepuestos_Click(object sender, EventArgs e)
+        {
+            Repuestos repuestos = new Repuestos();
+            repuestos.Show();
+            this.Close();
+        }
     }
 }
